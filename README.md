@@ -4,6 +4,10 @@ A plan for African Ancestry, prepared for Gina Paige. One self-contained page: `
 
 Use the arrow keys or click to move through the slides. N shows speaker notes, F goes full screen. On the growth slide, each arrow press adds one layer.
 
+## Lite version
+
+A five-slide version lives at [`lite/`](https://seneca-labs.github.io/africanancestrydeck/lite/): the cover, where the purchase journey breaks, and three possibilities, ending on the reveal. A PDF copy is at `lite/african-ancestry-lite.pdf`. Its slide source and build script are on the `lite` branch.
+
 ## Photo credits
 
 Photos in the mockups are stand-ins until real photography is shot.

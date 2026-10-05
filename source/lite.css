@@ -1,0 +1,17 @@
+/* ---------- lite deck: the pixel journey (slide 2) ---------- */
+.pj { display: grid; grid-template-columns: 210px repeat(6, 1fr); column-gap: 16px; row-gap: 40px; align-content: start; }
+.pj-name { font-size: 32px; line-height: 40px; margin-top: 2px; }
+.pj-lab { padding-top: 6px; }
+.pj-lt { font-size: 30px; line-height: 38px; font-weight: 500; color: var(--ink); }
+.pj-cell { position: relative; }
+.pj-cell::after { content: ''; position: absolute; left: 24px; right: -40px; top: 22.5px; height: 3px; background: var(--ink); }
+.pj-cell.breaks::after, .pj-cell.lost::after { height: 0; background: none; border-top: 3px dashed var(--brown); }
+.pj-cell.end::after { display: none; }
+.pj-node { position: relative; z-index: 1; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: var(--ink); color: var(--on-pill); }
+.pj-node.lost { background: var(--paper); box-shadow: 0 0 0 2.5px var(--brown) inset; color: var(--brown); }
+.pj-status { margin-top: 18px; font-size: 30px; line-height: 38px; font-weight: 400; color: var(--ink); }
+.pj-status.lost { color: var(--brown); }
+.pj-cell .small { margin-top: 4px; padding-right: 8px; }
+.pj-meet { font-size: 26px; line-height: 34px; color: var(--muted); padding: 16px 0; }
+.pj-meet.flag { color: var(--ink); background: var(--brown-soft); border-radius: 20px; padding: 16px 20px; margin-left: -20px; box-shadow: 0 0 0 1.5px #D9C8B6 inset; }
+.small, .pj-meet { text-wrap: pretty; }

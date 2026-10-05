@@ -1,0 +1,112 @@
+<!-- Lite deck: the cover, then four slides. Same build language as slides.html:
+     {{icon:Name:size}} = thin Lucide icon; src="asset:file" inlined from deck/assets (the original mockups, unchanged).
+     Last <aside> in each section = speaker notes. Built by scripts/build-deck-lite.mjs. -->
+
+<!-- 1. Title (unchanged from the full deck) -->
+<section id="title" data-bare style="display:grid; grid-template-columns:1fr 780px; column-gap:96px; padding:120px 120px 110px">
+  <div style="display:flex; flex-direction:column; justify-content:space-between">
+    <img src="asset:logo.svg" alt="African Ancestry" style="height:58px; align-self:flex-start">
+    <div>
+      <h1 style="font-size:150px; line-height:144px; letter-spacing:-0.045em">The next<br>chapter.</h1>
+      <p class="sub" style="font-size:44px; line-height:54px; margin-top:34px">A plan for African Ancestry.</p>
+    </div>
+    <div>
+      <p style="font-size:28px; line-height:36px" class="ink2">Prepared for Gina Paige · September 2026</p>
+      <p class="small" style="margin-top:8px">Dario Calmese · Calvary Rogers · Obed Appiah-Agyeman</p>
+    </div>
+  </div>
+  <img src="asset:family-close.jpg" alt="A family gathered around a phone" style="width:100%; height:850px; object-fit:cover; object-position:50% 45%; border-radius:40px">
+  <aside>Open simply. Four slides: where the purchase journey breaks today, then three possibilities, each one building on the last. The look of this deck is the look we propose for the brand.</aside>
+</section>
+
+<!-- 2. Where the purchase journey breaks: the pixel journey from ad to cart -->
+<section id="journey">
+  <div class="head"><p class="eyebrow">Where the purchase journey breaks</p><h2 class="title-m">Shoppers keep going. Meta loses the trail.</h2></div>
+  <div class="body pj">
+    <span></span>
+    <div class="pj-step"><p class="eyebrow">01</p><p class="rt pj-name">Ad click</p></div>
+    <div class="pj-step"><p class="eyebrow">02</p><p class="rt pj-name">Landing page</p></div>
+    <div class="pj-step"><p class="eyebrow">03</p><p class="rt pj-name">Product page</p></div>
+    <div class="pj-step"><p class="eyebrow">04</p><p class="rt pj-name">Add to cart</p></div>
+    <div class="pj-step"><p class="eyebrow">05</p><p class="rt pj-name">Checkout</p></div>
+    <div class="pj-step"><p class="eyebrow">06</p><p class="rt pj-name">Purchase</p></div>
+
+    <div class="pj-lab"><p class="pj-lt">Meta's pixel</p><p class="small">What Meta can see</p></div>
+    <div class="pj-cell"><span class="pj-node">{{icon:Check:24}}</span><p class="pj-status">Seen</p><p class="small">The click ID is saved on arrival</p></div>
+    <div class="pj-cell"><span class="pj-node">{{icon:Check:24}}</span><p class="pj-status">Seen</p><p class="small">Except two ads whose redirect drops the click ID</p></div>
+    <div class="pj-cell breaks"><span class="pj-node">{{icon:Check:24}}</span><p class="pj-status">Seen</p><p class="small">The product view reaches Meta</p></div>
+    <div class="pj-cell lost"><span class="pj-node lost">{{icon:X:24}}</span><p class="pj-status lost">Never sent</p><p class="small">The Add to cart event stops in the browser</p></div>
+    <div class="pj-cell lost"><span class="pj-node lost">{{icon:X:24}}</span><p class="pj-status lost">Trail lost</p><p class="small">A new address, a new browser ID, no click ID</p></div>
+    <div class="pj-cell lost end"><span class="pj-node lost">{{icon:X:24}}</span><p class="pj-status lost">Not credited</p><p class="small">Meta can't tie the sale to the ad</p></div>
+
+    <div class="pj-lab"><p class="pj-lt">The shopper</p><p class="small">What they meet</p></div>
+    <p class="pj-meet">Taps the ad</p>
+    <p class="pj-meet">Lands on the site</p>
+    <p class="pj-meet flag">A popup covers Add to cart</p>
+    <p class="pj-meet">Opens the cart</p>
+    <p class="pj-meet flag">Checkout leaves your web address</p>
+    <p class="pj-meet">Buys the test</p>
+  </div>
+  <div class="foot" style="display:flex; align-items:center; gap:40px; white-space:nowrap">
+    <span class="pill">In August, Meta ads got the same clicks as July and reported half the purchases.</span>
+  </div>
+  <aside>This is the path of a sale from the ad to the cart, as Meta's pixel sees it. We traced it on the live site on 25 September. The top line is what Meta can see; the bottom line is what the shopper meets. The ad click, the landing page and the product page all reach Meta, with one exception: two live ads land on a redirect that drops the click ID. Then the trail breaks. Add to cart is set up but never leaves the browser. Checkout moves to africanancestry.myshopify.com, where the click ID doesn't exist and Meta sees a new browser, so the checkout, and by extension the purchase, can't be tied back to the ad. Meanwhile the shopper meets an SMS popup right at Add to cart, and the address bar changes at checkout: five taps to checkout, one of them closing a popup. The result: in August, Meta ads got the same clicks as July and reported half the purchases. These are Meta's figures, not total sales; much of the drop is likely measurement.</aside>
+</section>
+
+<!-- 3. Possibility 01: stabilize the back end -->
+<section id="p1">
+  <div class="head split"><div><p class="eyebrow">Possibility 01 · Stabilize the back end</p><h2 class="title-m">Let every sale count.</h2></div><span class="pill brings">The opportunity: your ad budget, at full strength</span></div>
+  <div class="body" style="display:grid; grid-template-columns:1fr 720px; gap:96px; align-items:start">
+    <div style="display:flex; flex-direction:column; gap:48px">
+      <div class="row" style="align-items:flex-start"><span class="icircle">{{icon:Radio:28}}</span><div><p class="eyebrow">Tracking</p><p class="rt" style="font-size:36px; line-height:44px; margin-top:4px">Meta sees every step</p><p class="small" style="margin-top:6px">Add to cart and purchases reach Meta, with the click ID kept from the ad to the sale.</p></div></div>
+      <div class="row" style="align-items:flex-start"><span class="icircle">{{icon:Lock:28}}</span><div><p class="eyebrow">Checkout</p><p class="rt" style="font-size:36px; line-height:44px; margin-top:4px">Checkout on your own address</p><p class="small" style="margin-top:6px">checkout.africanancestry.com, with the privacy promise beside the button and no popups on the way.</p></div></div>
+      <div class="row" style="align-items:flex-start"><span class="icircle">{{icon:Gauge:28}}</span><div><p class="eyebrow">Site performance</p><p class="rt" style="font-size:36px; line-height:44px; margin-top:4px">Fast pages that search and AI can read</p><p class="small" style="margin-top:6px">Product pages that load in seconds on a phone, with every word readable.</p></div></div>
+    </div>
+    <div class="card" style="padding:36px 44px">
+      <p class="eyebrow">The path of a sale</p>
+      <div style="display:flex; flex-direction:column; margin-top:10px">
+        <div class="row" style="padding:15px 0; border-bottom:1.5px solid var(--line)"><span class="icircle sm" style="width:50px; height:50px">{{icon:Check:22}}</span><p class="rt" style="font-size:30px">Ad click</p><p class="small" style="margin-left:auto">Meta sees it</p></div>
+        <div class="row" style="padding:15px 0; border-bottom:1.5px solid var(--line)"><span class="icircle sm" style="width:50px; height:50px">{{icon:Check:22}}</span><p class="rt" style="font-size:30px">Landing page</p><p class="small" style="margin-left:auto">Meta sees it</p></div>
+        <div class="row" style="padding:15px 0; border-bottom:1.5px solid var(--line)"><span class="icircle sm" style="width:50px; height:50px">{{icon:Check:22}}</span><p class="rt" style="font-size:30px">Add to cart</p><p class="small" style="margin-left:auto">Meta sees it</p></div>
+        <div class="row" style="padding:15px 0; border-bottom:1.5px solid var(--line)"><span class="icircle sm" style="width:50px; height:50px">{{icon:Check:22}}</span><p class="rt" style="font-size:30px">Checkout</p><p class="small" style="margin-left:auto">Meta sees it</p></div>
+        <div class="row" style="padding:15px 0"><span class="icircle sm" style="width:50px; height:50px">{{icon:Check:22}}</span><p class="rt" style="font-size:30px">Purchase</p><p class="small" style="margin-left:auto">Meta sees it</p></div>
+      </div>
+      <div class="pill" style="margin-top:18px; width:100%; justify-content:space-between">Meta sees what Shopify sees {{icon:ArrowRight:28}}</div>
+    </div>
+  </div>
+  <aside>The first possibility is the back end, and it comes first because everything else builds on it. The opportunity is the ad budget she already spends, working at full strength. Tracking: send Add to cart and purchases to Meta, and keep the click ID from the ad all the way to the sale, including through redirects. Checkout: keep it on her own address, checkout.africanancestry.com, with the privacy promise beside the button and no popups between the ad and the checkout. Site performance: product pages that load in seconds on a phone, and that search engines and AI assistants can read. When Meta can see every step of a sale, it learns who her buyers are and finds more people like them. The same budget works harder.</aside>
+</section>
+
+<!-- 4. Possibility 02: relaunch the storefront -->
+<section id="p2">
+  <div class="head split"><div><p class="eyebrow">Possibility 02 · Relaunch the storefront</p><h2 class="title-m">A storefront worthy of the test.</h2></div><span class="pill brings">The opportunity: more buyers per click</span></div>
+  <div class="body" style="display:flex; align-items:flex-start; gap:48px">
+    <div class="browser" style="width:760px"><div class="bar"><i></i><i></i><i></i><span>africanancestry.com</span></div><img src="asset:d-home.jpg" alt="Proposed desktop home page"></div>
+    <div class="phone" style="width:262px"><img src="asset:m-product.jpg" alt="Proposed mobile product page"></div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:34px; padding-left:24px">
+      <div class="row" style="align-items:flex-start"><span class="icircle sm">{{icon:MousePointerClick:26}}</span><div><p class="rt" style="font-size:30px; line-height:38px">A faster path to cart</p><p class="small" style="margin-top:4px">Ad to checkout in three taps, with nothing in the way.</p></div></div>
+      <div class="row" style="align-items:flex-start"><span class="icircle sm">{{icon:Tag:26}}</span><div><p class="rt" style="font-size:30px; line-height:38px">Clear pricing</p><p class="small" style="margin-top:4px">$299 and results timing on the first screen.</p></div></div>
+      <div class="row" style="align-items:flex-start"><span class="icircle sm">{{icon:Lock:26}}</span><div><p class="rt" style="font-size:30px; line-height:38px">The privacy promise, up front</p><p class="small" style="margin-top:4px">Sample destroyed, DNA never sold, right beside Add to cart.</p></div></div>
+      <div class="row" style="align-items:flex-start"><span class="icircle sm">{{icon:GitBranch:26}}</span><div><p class="rt" style="font-size:30px; line-height:38px">Simpler words for each line</p><p class="small" style="margin-top:4px">Mom's line or Dad's line, in plain words.</p></div></div>
+    </div>
+  </div>
+  <aside>The second possibility is the storefront, desktop and mobile, in the language you're looking at. A faster path to cart: from the ad to checkout in three taps, with no banners or popups in between. Clear pricing: $299 and the results timing on the first screen. The privacy promise up front: the sample is destroyed and the DNA is never sold, right beside Add to cart, where today it sits on a sub-page. And simpler words: the shopper chooses their mom's line or their dad's line, in plain words, instead of starting from the test names. Some photos are stand-ins until we shoot real families.</aside>
+</section>
+
+<!-- 5. Possibility 03: the family experience. Builds one screen per click and ends on the reveal. -->
+<section id="p3" data-steps="2">
+  <div class="head split"><div><p class="eyebrow">Possibility 03 · The family experience</p><h2 class="title-m">Make the wait part of the story.</h2></div><span class="pill brings">The opportunity: a family that opens it together</span></div>
+  <div class="body" style="display:grid; grid-template-columns:auto 1fr; gap:96px; align-items:center">
+    <div style="display:flex; gap:36px">
+      <div class="phone" style="width:300px"><img src="asset:w-wait.jpg" alt="App screen: the kit is in the lab, week 3 of 6 to 8, with this week's prompts"></div>
+      <div class="phone stp" data-step="1" style="width:300px"><img src="asset:w-ready.jpg" alt="App screen: results are ready, open now or plan a family reveal"></div>
+      <div class="phone stp" data-step="2" style="width:300px"><img src="asset:w-reveal.jpg" alt="App screen: the reveal, the Tikar people of Cameroon"></div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:44px">
+      <div><p class="eyebrow">01</p><p class="rt" style="font-size:34px; line-height:42px; margin-top:4px">While you wait</p><p class="small" style="margin-top:6px">Track the kit to the lab. Each week, a short read and a prompt to record an elder.</p></div>
+      <div class="stp" data-step="1"><p class="eyebrow">02</p><p class="rt" style="font-size:34px; line-height:42px; margin-top:4px">Invite the family</p><p class="small" style="margin-top:6px">Results arrive sealed. Plan a reveal and open it together, in person or on a call.</p></div>
+      <div class="stp" data-step="2"><p class="eyebrow">03</p><p class="rt" style="font-size:34px; line-height:42px; margin-top:4px">The reveal</p><p class="small" style="margin-top:6px">A people and a place, told like a story.</p></div>
+    </div>
+  </div>
+  <aside>The third possibility is the family experience, and this slide builds one screen per click. Results take six to eight weeks after the lab receives the swab, and we'd make that time part of the story. While you wait: the app tracks the kit to the lab, and each week brings a short read and a prompt to record an elder, so the family archive starts before the result arrives. Click. Invite the family: results arrive sealed. Customers can open them alone, or plan a family reveal and invite relatives to open it together, in person or on a call. Click. The reveal: a people and a place, told like a story. Stop here, and let her imagine what comes next.</aside>
+</section>

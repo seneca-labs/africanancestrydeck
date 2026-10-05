@@ -1,12 +1,13 @@
 # African Ancestry: The next chapter (lite)
 
-A lightweight version of the plan for African Ancestry, prepared for Gina Paige. Five slides in one self-contained page, `index.html`, with a PDF copy in `african-ancestry-lite.pdf`. The full deck stays on `main`.
+A lightweight version of the plan for African Ancestry, prepared for Gina Paige. Six slides in one self-contained page, `index.html`, with a PDF copy in `african-ancestry-lite.pdf`. The full deck stays on `main`.
 
 1. Cover
 2. Where the purchase journey breaks: the pixel journey from ad to cart
-3. Possibility 01: stabilize the back end (tracking, checkout, site performance)
-4. Possibility 02: relaunch the storefront
-5. Possibility 03: the family experience, ending on the reveal
+3. What's causing it: the site today, on a phone
+4. Possibility 01: stabilize the back end (tracking, checkout, site performance)
+5. Possibility 02: relaunch the storefront
+6. Possibility 03: the family experience, ending on the reveal
 
 Use the arrow keys or click to move through the slides. N shows speaker notes, F goes full screen. The last slide adds one screen per arrow press and ends on the reveal.
 

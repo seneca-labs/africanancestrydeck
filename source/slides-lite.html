@@ -1,4 +1,4 @@
-<!-- Lite deck: the cover, then four slides. Same build language as slides.html:
+<!-- Lite deck: the cover, then five slides. Same build language as slides.html:
      {{icon:Name:size}} = thin Lucide icon; src="asset:file" inlined from deck/assets (the original mockups, unchanged).
      Last <aside> in each section = speaker notes. Built by scripts/build-deck-lite.mjs. -->
 
@@ -16,7 +16,7 @@
     </div>
   </div>
   <img src="asset:family-close.jpg" alt="A family gathered around a phone" style="width:100%; height:850px; object-fit:cover; object-position:50% 45%; border-radius:40px">
-  <aside>Open simply. Four slides: where the purchase journey breaks today, then three possibilities, each one building on the last. The look of this deck is the look we propose for the brand.</aside>
+  <aside>Open simply. Five slides: where the purchase journey breaks today and what's causing it, then three possibilities, each one building on the last. The look of this deck is the look we propose for the brand.</aside>
 </section>
 
 <!-- 2. Where the purchase journey breaks: the pixel journey from ad to cart -->
@@ -53,7 +53,19 @@
   <aside>This is the path of a sale from the ad to the cart, as Meta's pixel sees it. We traced it on the live site on 25 September. The top line is what Meta can see; the bottom line is what the shopper meets. The ad click, the landing page and the product page all reach Meta, with one exception: two live ads land on a redirect that drops the click ID. Then the trail breaks. Add to cart is set up but never leaves the browser. Checkout moves to africanancestry.myshopify.com, where the click ID doesn't exist and Meta sees a new browser, so the checkout, and by extension the purchase, can't be tied back to the ad. Meanwhile the shopper meets an SMS popup right at Add to cart, and the address bar changes at checkout: five taps to checkout, one of them closing a popup. The result: in August, Meta ads got the same clicks as July and reported half the purchases. These are Meta's figures, not total sales; much of the drop is likely measurement.</aside>
 </section>
 
-<!-- 3. Possibility 01: stabilize the back end -->
+<!-- 3. What's causing it (unchanged from the full deck) -->
+<section id="causes">
+  <div class="head"><p class="eyebrow">What's causing it</p><h2 class="title-m">Your site today, on a phone.</h2></div>
+  <div class="body cause-grid">
+    <div><p class="eyebrow">01</p><p class="cause-t">Checkout leaves your site.</p><p class="small cause-s">Meta loses track of the sale.</p><div class="shot" style="width:240px; margin-top:32px"><img src="asset:today-checkout.jpg" alt="Today's checkout on africanancestry.myshopify.com"></div></div>
+    <div><p class="eyebrow">02</p><p class="cause-t">What search and AI see.</p><p class="small cause-s">An empty page until code runs.</p><div class="shot" style="width:240px; margin-top:32px"><img src="asset:today-blank.jpg" alt="Today's product page with JavaScript off: blank"></div></div>
+    <div><p class="eyebrow">03</p><p class="cause-t">A popup covers Add to cart.</p><p class="small cause-s">Results timing: three answers.</p><div class="shot" style="width:240px; margin-top:32px"><img src="asset:today-popup.jpg" alt="Today's product page with an SMS popup over it"></div></div>
+    <div><p class="eyebrow">04</p><p class="cause-t">Reviews stop in 2023.</p><p class="small cause-s">Nothing brings people back.</p><div class="shot" style="width:240px; margin-top:32px"><img src="asset:today-reviews.jpg" alt="Today's product page reviews, dated 2023"></div></div>
+  </div>
+  <aside>What we found on the live site on 25 September, at phone size. One: the checkout moves to africanancestry.myshopify.com, and the Add to cart signal never reaches Meta, so Meta loses the trail before the sale. Two: this is the product page as search engines and AI assistants see it. Everything loads later, in the browser. Three: an SMS popup lands on the product page right at Add to cart, and results timing appears three different ways across the site. Four: the newest reviews on the product page, sorted most recent, are from 2023. After the result arrives, there is nothing to come back to.</aside>
+</section>
+
+<!-- 4. Possibility 01: stabilize the back end -->
 <section id="p1">
   <div class="head split"><div><p class="eyebrow">Possibility 01 · Stabilize the back end</p><h2 class="title-m">Let every sale count.</h2></div><span class="pill brings">The opportunity: your ad budget, at full strength</span></div>
   <div class="body" style="display:grid; grid-template-columns:1fr 720px; gap:96px; align-items:start">
@@ -77,7 +89,7 @@
   <aside>The first possibility is the back end, and it comes first because everything else builds on it. The opportunity is the ad budget she already spends, working at full strength. Tracking: send Add to cart and purchases to Meta, and keep the click ID from the ad all the way to the sale, including through redirects. Checkout: keep it on her own address, checkout.africanancestry.com, with the privacy promise beside the button and no popups between the ad and the checkout. Site performance: product pages that load in seconds on a phone, and that search engines and AI assistants can read. When Meta can see every step of a sale, it learns who her buyers are and finds more people like them. The same budget works harder.</aside>
 </section>
 
-<!-- 4. Possibility 02: relaunch the storefront -->
+<!-- 5. Possibility 02: relaunch the storefront -->
 <section id="p2">
   <div class="head split"><div><p class="eyebrow">Possibility 02 · Relaunch the storefront</p><h2 class="title-m">A storefront worthy of the test.</h2></div><span class="pill brings">The opportunity: more buyers per click</span></div>
   <div class="body" style="display:flex; align-items:flex-start; gap:48px">
@@ -93,7 +105,7 @@
   <aside>The second possibility is the storefront, desktop and mobile, in the language you're looking at. A faster path to cart: from the ad to checkout in three taps, with no banners or popups in between. Clear pricing: $299 and the results timing on the first screen. The privacy promise up front: the sample is destroyed and the DNA is never sold, right beside Add to cart, where today it sits on a sub-page. And simpler words: the shopper chooses their mom's line or their dad's line, in plain words, instead of starting from the test names. Some photos are stand-ins until we shoot real families.</aside>
 </section>
 
-<!-- 5. Possibility 03: the family experience. Builds one screen per click and ends on the reveal. -->
+<!-- 6. Possibility 03: the family experience. Builds one screen per click and ends on the reveal. -->
 <section id="p3" data-steps="2">
   <div class="head split"><div><p class="eyebrow">Possibility 03 · The family experience</p><h2 class="title-m">Make the wait part of the story.</h2></div><span class="pill brings">The opportunity: a family that opens it together</span></div>
   <div class="body" style="display:grid; grid-template-columns:auto 1fr; gap:96px; align-items:center">

@@ -6,7 +6,7 @@ Use the arrow keys or click to move through the slides. N shows speaker notes, F
 
 ## Lite version
 
-A five-slide version lives at [`lite/`](https://seneca-labs.github.io/africanancestrydeck/lite/): the cover, where the purchase journey breaks, and three possibilities, ending on the reveal. A PDF copy is at `lite/african-ancestry-lite.pdf`. Its slide source and build script are on the `lite` branch.
+A six-slide version lives at [`lite/`](https://seneca-labs.github.io/africanancestrydeck/lite/): the cover, where the purchase journey breaks, what's causing it, and three possibilities, ending on the reveal. A PDF copy is at `lite/african-ancestry-lite.pdf`. Its slide source and build script are on the `lite` branch.
 
 ## Photo credits
 
